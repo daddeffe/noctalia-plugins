@@ -1,6 +1,6 @@
 {
   "tooltip": {
-    "no-update": "No updates available",
-    "available-update": "Click to update your system"
+    "available-update": "Click to update your system",
+    "no-update": "No updates available"
   }
 }

@@ -1,21 +1,21 @@
 {
-    "settings": {
-        "hideInactive": {
-            "label": "Nascondi stati inattivi",
-            "desc": "Nascondi le icone di microfono, fotocamera e schermo quando sono inattive."
-        },
-        "iconSpacing": {
-            "label": "Spaziatura delle icone",
-            "desc": "Imposta la distanza tra le icone."
-        },
-        "removeMargins": {
-            "label": "Rimuovi margini",
-            "desc": "Rimuove tutti i margini esterni del widget."
-        }
+  "settings": {
+    "hideInactive": {
+      "desc": "Nascondi le icone di microfono, fotocamera e schermo quando sono inattive.",
+      "label": "Nascondi stati inattivi"
     },
-    "tooltip": {
-        "cam-on": "Kamera: {apps}",
-        "mic-on": "Mikrofonoa: {apps}",
-        "screen-on": "Ekran-partaĝado: {apps}"
+    "iconSpacing": {
+      "desc": "Imposta la distanza tra le icone.",
+      "label": "Spaziatura delle icone"
+    },
+    "removeMargins": {
+      "desc": "Rimuove tutti i margini esterni del widget.",
+      "label": "Rimuovi margini"
     }
+  },
+  "tooltip": {
+    "cam-on": "Kamera: {apps}",
+    "mic-on": "Mikrofonoa: {apps}",
+    "screen-on": "Ekran-partaĝado: {apps}"
+  }
 }

@@ -1,21 +1,21 @@
 {
-    "settings": {
-        "hideInactive": {
-            "label": "Pasif durumları gizle",
-            "desc": "Mikrofon, kamera ve ekran simgelerini pasif olduklarında gizle."
-        },
-        "iconSpacing": {
-            "label": "Simge aralığı",
-            "desc": "Simgeler arasındaki boşluğu ayarla."
-        },
-        "removeMargins": {
-            "label": "Kenarlıkları kaldır",
-            "desc": "Widget’ın tüm dış kenar boşluklarını kaldırır."
-        }
+  "settings": {
+    "hideInactive": {
+      "desc": "Mikrofon, kamera ve ekran simgelerini pasif olduklarında gizle.",
+      "label": "Pasif durumları gizle"
     },
-    "tooltip": {
-        "cam-on": "Kamera: {apps}",
-        "mic-on": "Mikrofon: {apps}",
-        "screen-on": "Ekran paylaşımı: {apps}"
+    "iconSpacing": {
+      "desc": "Simgeler arasındaki boşluğu ayarla.",
+      "label": "Simge aralığı"
+    },
+    "removeMargins": {
+      "desc": "Widget’ın tüm dış kenar boşluklarını kaldırır.",
+      "label": "Kenarlıkları kaldır"
     }
+  },
+  "tooltip": {
+    "cam-on": "Kamera: {apps}",
+    "mic-on": "Mikrofon: {apps}",
+    "screen-on": "Ekran paylaşımı: {apps}"
+  }
 }

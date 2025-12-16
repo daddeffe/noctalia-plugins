@@ -1,21 +1,21 @@
 {
-    "settings": {
-        "hideInactive": {
-            "label": "Inaktive Zustände ausblenden",
-            "desc": "Mikrofon-, Kamera- und Bildschirmsymbole ausblenden, wenn sie inaktiv sind."
-        },
-        "iconSpacing": {
-            "label": "Symbolabstand",
-            "desc": "Den Abstand zwischen den Symbolen festlegen."
-        },
-        "removeMargins": {
-            "label": "Ränder entfernen",
-            "desc": "Alle äußeren Ränder des Widgets entfernen."
-        }
+  "settings": {
+    "hideInactive": {
+      "desc": "Mikrofon-, Kamera- und Bildschirmsymbole ausblenden, wenn sie inaktiv sind.",
+      "label": "Inaktive Zustände ausblenden"
     },
-    "tooltip": {
-        "cam-on": "Kamera: {apps}",
-        "mic-on": "Mikrofon: {apps}",
-        "screen-on": "Bildschirmfreigabe: {apps}"
+    "iconSpacing": {
+      "desc": "Den Abstand zwischen den Symbolen festlegen.",
+      "label": "Symbolabstand"
+    },
+    "removeMargins": {
+      "desc": "Alle äußeren Ränder des Widgets entfernen.",
+      "label": "Ränder entfernen"
     }
+  },
+  "tooltip": {
+    "cam-on": "Kamera: {apps}",
+    "mic-on": "Mikrofon: {apps}",
+    "screen-on": "Bildschirmfreigabe: {apps}"
+  }
 }
