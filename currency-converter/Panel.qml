@@ -15,7 +15,7 @@ Item {
   // SmartPanel properties
   readonly property var geometryPlaceholder: panelContainer
   property real contentPreferredWidth: 400 * Style.uiScaleRatio
-  property real contentPreferredHeight: 500 * Style.uiScaleRatio
+  property real contentPreferredHeight: 320 * Style.uiScaleRatio
   readonly property bool allowAttach: true
   
   anchors.fill: parent
@@ -124,7 +124,10 @@ Item {
 
     ColumnLayout {
       anchors.fill: parent
-      anchors.margins: Style.marginL
+      anchors.leftMargin: Style.marginM
+      anchors.rightMargin: Style.marginL
+      anchors.topMargin: Style.marginM
+      anchors.bottomMargin: Style.marginM
       spacing: Style.marginM
 
       // Header
@@ -136,8 +139,8 @@ Item {
         ColumnLayout {
           id: headerContent
           anchors.fill: parent
-          anchors.margins: Style.marginL
-          spacing: Style.marginM
+          anchors.margins: Style.marginM
+          spacing: Style.marginS
 
           RowLayout {
             Layout.fillWidth: true
@@ -177,8 +180,8 @@ Item {
 
         ColumnLayout {
           anchors.fill: parent
-          anchors.margins: Style.marginL
-          spacing: Style.marginL
+          anchors.margins: Style.marginM
+          spacing: Style.marginS
 
           // From section
           ColumnLayout {
@@ -318,14 +321,21 @@ Item {
           }
 
           // Swap button
-          NIconButton {
-            Layout.alignment: Qt.AlignHCenter
-            icon: "arrows-exchange"
-            tooltipText: "Trocar moedas"
-            baseSize: Style.baseWidgetSize * 0.9
-            colorBg: Color.mPrimary
-            colorFg: Color.mOnPrimary
-            onClicked: swapCurrencies()
+          Item {
+            Layout.fillWidth: true
+            Layout.preferredHeight: Style.baseWidgetSize * 1.0
+            Layout.topMargin: Style.marginXL
+            Layout.bottomMargin: Style.marginXS
+            
+            NIconButton {
+              anchors.centerIn: parent
+              icon: "arrows-exchange"
+              tooltipText: "Trocar moedas"
+              baseSize: Style.baseWidgetSize * 1.2
+              colorBg: Color.mPrimary
+              colorFg: Color.mOnPrimary
+              onClicked: swapCurrencies()
+            }
           }
 
           // To section
@@ -459,14 +469,11 @@ Item {
             }
           }
 
-          Item {
-            Layout.fillHeight: true
-          }
-
           // Exchange rate info
           Rectangle {
             Layout.fillWidth: true
             Layout.preferredHeight: rateInfoText.implicitHeight + Style.marginM * 2
+            Layout.topMargin: Style.marginS
             color: Color.mSurfaceVariant
             radius: Style.iRadiusM
 

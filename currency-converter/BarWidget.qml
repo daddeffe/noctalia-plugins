@@ -47,8 +47,8 @@ Rectangle {
     var iconWidth = Style.toOdd ? Style.toOdd(Style.capsuleHeight * 0.6) : 20;
     var textWidth = rateText ? (rateText.implicitWidth + (Style.marginS || 4)) : 80;
     if (displayMode === "icon") return iconWidth + (Style.marginM || 8) * 2;
-    if (displayMode === "text") return textWidth + (Style.marginM || 8) * 2;
-    return iconWidth + textWidth + (Style.marginM || 8) * 2;
+    if (displayMode === "text") return textWidth + (Style.marginM || 8) * 2 + 24;
+    return iconWidth + textWidth + (Style.marginM || 8) * 2 + 24;
   }
 
   readonly property real contentHeight: {
@@ -141,7 +141,7 @@ Rectangle {
   RowLayout {
     anchors.fill: parent
     anchors.leftMargin: isVertical ? 0 : (Style.marginM || 8)
-    anchors.rightMargin: isVertical ? 0 : (Style.marginM || 8)
+    anchors.rightMargin: isVertical ? 0 : 32
     anchors.topMargin: isVertical ? (Style.marginS || 4) : 0
     anchors.bottomMargin: isVertical ? (Style.marginS || 4) : 0
     spacing: Style.marginS || 4
