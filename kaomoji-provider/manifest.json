@@ -1,7 +1,7 @@
 {
   "id": "kaomoji-provider",
   "name": "Kaomoji Provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browse and search kaomoji emoticons from the launcher",
   "minNoctaliaVersion": "3.8.3",
   "author": "Noctalia Team",
